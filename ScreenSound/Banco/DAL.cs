@@ -39,4 +39,9 @@ public class DAL<T> where T : class
     {
         return context.Set<T>().FirstOrDefault(condicao);
     }
+
+    public IEnumerable<T> ListarPor(Func<T, bool> condicao)
+    {
+        return context.Set<T>().Where(condicao);
+    }
 }
