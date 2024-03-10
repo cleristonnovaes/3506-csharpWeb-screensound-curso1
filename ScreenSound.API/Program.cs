@@ -37,6 +37,7 @@ app.AddEndPointGeneros();
 
 app.UseSwagger();
 app.UseSwaggerUI();
+app.UseStaticFiles();
 
 app.UseCors(x => x
     .AllowAnyMethod()

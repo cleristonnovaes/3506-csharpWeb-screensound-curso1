@@ -10,6 +10,8 @@ builder.RootComponents.Add<HeadOutlet>("head::after");
 
 builder.Services.AddTransient<ArtistaAPI>();
 builder.Services.AddTransient<MusicasAPI>();
+builder.Services.AddTransient<GeneroAPI>();
+
 
 builder.Services.AddMudServices();
 
